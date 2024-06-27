@@ -1,0 +1,221 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+label.logo{
+
+    line-height: 80px;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #254336;
+    color: white;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+    height: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+    float: right;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;    
+}
+
+nav ul li a:hover {
+    background-color: #456255;
+}
+#content {
+    padding-top: 70px;
+}
+.h-primary {
+    /* align-self: center; */
+    font-size: 39px;
+    padding: 4px;
+    font-family: sans-serif;
+}
+#content #Welcome {
+    text-align: center;
+    color: rgb(17, 4, 4);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 14px;
+    /* border-right: 2px solid rgb(24, 10, 10); */
+    width: 68%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1.5s steps(24),
+        cursor .4s step-end infinite alternate;
+    animation-delay: 1s;
+}
+#home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 60vh;
+}
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+section {
+    padding: 50px;
+    height: auto;
+}
+
+#navbar.scrolled {
+    background-color: #222;
+}
+#checkbox{
+    display: none;
+}
+.bars{
+    font-size: 35px;
+    float: right;
+    margin: 10px;
+    padding: 10px;
+    display: none;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label, input, textarea {
+    margin: 0.5em 0;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+#services{
+    padding-top: 60px;
+}
+#contact{
+    color: aliceblue;
+    background-color: #524C42;
+    text-align: center;
+}
+#contac,#insta,#mail{
+    font-size: 50px;
+    margin: 30px 80px;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.product {
+    background-color: aliceblue;
+    border: 1px solid #ddd;
+    margin: 1em 0;
+    padding: 1em;
+    text-align: center;
+    width: 350px;
+    height: 200px;
+    box-shadow: 10px 10px 10px rgb(165, 165, 153);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: 0.6s;
+}
+button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+.product:hover{
+    transform: scale(1.04);
+}
+#abou{
+    padding-top: 60px;
+    text-align: center;
+}
+@media (max-width:678px){
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    nav ul{
+        display:block;
+        background-color: rgb(40, 57, 57);
+        position: fixed;
+        top: 70px;
+        left: -110%;
+        width: 100%;
+        text-align: center;
+        transition:   all 0.3s;
+        /* cursor: pointer; */
+    }
+    #checkbox:checked ~ ul{
+        left: -10px;
+    }
+    .h-primary{
+        font-size: 1.4rem;
+    }
+    .contac_icon{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    #contac, #insta, #mail {
+        font-size: 40px;
+        margin: 0 40px;
+    }
+}

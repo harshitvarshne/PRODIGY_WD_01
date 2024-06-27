@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav id="navbar">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox" class="bars">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="logo"><img src="logo.png" height="80px" width="120px" alt="onlinemeals"></label> 
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Books</a></li>
+            <li><a href="#about">About Us   </a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <section id="home">
+            <h1 class="h-primary" id="Welcome">Welcome to BookVista</h1>
+            <p align="center" id="wel">Welcome to BookVista, the ultimate e-book destination. Explore thousands of titles across all genres, get personalised suggestions, and read on any device, anytime, anywhere. Join our dynamic community and engage with other readers through reviews and comments. Find your next favourite book today at BookVista!
+            </p>
+        </section>
+        <section id="services">
+            <h2 align="center">Books</h2><br>
+            <div class="products">
+                <div class="product">
+                    <h3>Pride and Prejudice</h3>
+                    <p>is a famous novel by Jane Austen about the intricacies of love, social status, and misunderstandings in nineteenth-century England.</p><br>
+                    <button onclick="addToCart('Smartphone')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>Don Quixote</h3>
+                    <p>is a legendary book written by Miguel de Cervantes that chronicles the exploits of an idealistic knight-errant who embarks on a mission to bring back chivalry in 17th-century Spain.</p>
+                    <button onclick="addToCart('Laptop')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>The Great Gatsby</h3>
+                    <p>is a book written in the 1920s by F. Scott Fitzgerald that describes the glitzy but ultimately sad life of Jay Gatsby in America.</p><br><br>
+                    <button onclick="addToCart('Headphones')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>Moby-Dick</h3>
+                    <p>is an epic book by Herman Melville that tells the story of Captain Ahab's fervent desire for retribution against the white whale that amputated his leg.</p>
+                    <button onclick="addToCart('Smartphone')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>1984</h3>
+                    <p>George Orwell wrote a dystopian novel about a totalitarian future society ruled by ubiquitous government monitoring and propaganda.</p><br>
+                    <button onclick="addToCart('Laptop')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p> is a beloved Harper Lee book that follows Scout Finch in 1930s Alabama as she confronts racial injustice and moral development.</p><br>
+                    <button onclick="addToCart('Headphones')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h1 id="abou">About</h1>
+            <p>BookVista's purpose is to make reading accessible and pleasurable for everybody. We provide a large selection of e-books spanning multiple categories, from timeless classics to the most recent hits, all available at your fingertips.</p>
+
+                <p><b>Who We Are:</b><br>
+                    We are a group of book lovers and tech enthusiasts lead by <b>Harshit Varshney</b> who are committed to providing the greatest e-reading experience possible. Our goal is to deliver a user-friendly platform where you can discover, explore, and enjoy your favourite books at any time and from anywhere.
+                </p>
+                <p><b>What We Offer:</b><ul>
+                    <li><b>Extensive Library:</b> Thousands of titles across all genres.
+                    <li><b>Easy Access:</b> Read on any device, wherever you are.
+                    <li><b>Community:</b> Connect with fellow readers through reviews and discussions.</ul></p>
+                    <p><b>Join Us</b><br>
+                    Start your reading adventure with BookVista today. Discover new worlds, explore different perspectives, and enjoy the magic of books.<br>
+                    <b>Happy Reading!</b></p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2><div class="contac_icon">
+            <a href="#" style="color: aliceblue;"><i id="contac" class="fa-solid fa-phone"></i></a>
+            <a href="#" style="color: aliceblue;"><i id="insta" class="fa-brands fa-instagram"></i></a>
+            <a href="#" style="color: aliceblue;"><i id="mail" class="fa-regular fa-envelope"></i></a></div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 BookVista. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
